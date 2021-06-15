@@ -1,0 +1,20 @@
+<ion-header>
+ 
+</ion-header>
+
+<ion-content [fullscreen]="true" class="background_cs" >
+  <div class="login_div" style="padding-left: 11%;padding-top: 4%;margin-bottom: 21px;    margin-top: 58px; margin-left: 35px;">
+    <section style="margin-bottom: 24px; height: 51px;">
+      <div class="centered">
+        <label>
+          <input [(ngModel)] = "mobile" type="tel" maxlength="10" pattern="^[1-9][0-9]*$" class="textfield" required style="font-weight: bold;font-size: 16px;">
+           <span class="placeholder">Mobile Number</span>
+        </label>
+      </div>
+    </section>
+    <button (click) = "navigate()"class="ionic_btn">
+      Next
+    </button>
+  </div>
+
+</ion-content>

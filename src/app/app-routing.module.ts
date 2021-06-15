@@ -8,8 +8,16 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'loginpage',
     pathMatch: 'full'
+  },
+  {
+    path: 'loginpage',
+    loadChildren: () => import('./loginpage/loginpage.module').then( m => m.LoginpagePageModule)
+  },
+  {
+    path: 'otp-verify',
+    loadChildren: () => import('./otp-verify/otp-verify.module').then( m => m.OtpVerifyPageModule)
   },
 ];
 
